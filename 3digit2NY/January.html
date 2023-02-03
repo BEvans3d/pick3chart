@@ -12,8 +12,17 @@
 
   gtag('config', 'G-K4DKFY8J2V');
 </script>
-<title>NY_JAN</title>
 
+<script language='JavaScript' type='text/JavaScript'>
+// On subsequent pages, check for the existence of the "entryCode" value in session storage:
+var storedCode = sessionStorage.getItem("entryCode");
+if (!storedCode || storedCode !== randomCode) {
+    // If the value doesn't exist or is different, redirect the user back to the home page:
+    window.location.href ="../";
+}
+</script>
+
+<title>NY_JAN</title>
 
 </head>
 <body background="Limitless_sky2.gif">
